@@ -1,9 +1,12 @@
-.calligraffitti-regular {
-    font-family: "Calligraffitti", cursive;
-    font-weight: 400;
-    font-style: normal;
+.Encabezado{
+    background-color: black;
+    border-image-width: 1100px;
+    width: 250px;
+    display: flex
+}
+#hd{
+    flex-direction: row;
 }
 #header{
-    font-family: "Calligraffitti", cursive;
-
+    align-content: center;
 }
