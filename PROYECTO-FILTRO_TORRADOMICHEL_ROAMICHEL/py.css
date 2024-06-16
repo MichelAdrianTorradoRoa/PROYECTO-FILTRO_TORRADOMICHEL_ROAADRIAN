@@ -1,12 +1,84 @@
-.Encabezado{
-    background-color: black;
-    border-image-width: 1100px;
-    width: 250px;
-    display: flex
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#hd{
+html, body {
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#escritorio {
+    display: none; /* Oculta el aviso por defecto */
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1000; /* Asegura que esté encima de todo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    line-height: 1.5;
+}
+@media only screen and (min-width: 1001px) {
+    #escritorio {
+        display: block; /* Muestra el aviso solo en escritorio */
+    }
+}
+.Encabezado {
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    display: none;
+
+}
+
+.cbz {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 10px;
+}
+
+.logos {
+    display: flex;
     flex-direction: row;
 }
-#header{
-    align-content: center;
+
+.icons-top {
+    margin-right: 15px;
+}
+
+#header {
+    margin-top: 10px;
+    max-width: 100%;
+}
+#header img {
+    max-width: 100%; /* Asegurar que la imagen no se desborde */
+    height: auto;
+}
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: white;
+    }
+
+    .Encabezado {
+        display: block; /* Muestra la barra de navegación en móviles */
+    }
+
+    .logos {
+        max-width: 100%; /* Ancho máximo para los logos dentro de la barra de navegación */
+    }
 }
