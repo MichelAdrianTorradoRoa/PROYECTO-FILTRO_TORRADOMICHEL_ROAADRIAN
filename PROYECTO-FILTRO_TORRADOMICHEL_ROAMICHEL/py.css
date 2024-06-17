@@ -66,7 +66,28 @@ body {
     max-width: 100%;
 }
 #header img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     max-width: 100%; /* Asegurar que la imagen no se desborde */
+    height: auto;
+}
+.Main {
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el header y el video */
+    text-align: center;
+}
+.Main video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre el video y el texto */
+}
+.Main h2,
+.Main p {
+    margin-bottom: 20px; /* Espacio entre el texto y el carrusel */
+}
+.carousel-item img {
+    width: 100%;
     height: auto;
 }
 @media only screen and (max-width: 1000px) {
@@ -80,5 +101,137 @@ body {
 
     .logos {
         max-width: 100%; /* Ancho máximo para los logos dentro de la barra de navegación */
+    }
+    .row {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .imagen-banner-mas-informacion {
+        width: 100%;
+        height: auto;
+    }
+    .fondo-opaco-imagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
+    }
+    .contenedor-imagen-texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    .imagen-logo-2 {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .texto-blanco {
+        color: white;
+    }
+    .texto-negro {
+        color: black;
+    }
+    .texto-marron {
+        color: #8B4513;
+    }
+    .texto-titulos {
+        color: #8B4513; /* Color marrón actual */
+    }
+    
+    .texto-parrafos {
+        color: black; /* Cambiar a color negro */
+    }
+    .seccion-diges .col-md-6 {
+        flex: 1 1 100%; /* Cambiamos para ocupar toda la anchura en dispositivos pequeños */
+        max-width: 100%;
+        order: 2; /* Cambiamos el orden para que el texto esté debajo de la imagen */
+        margin-top: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .seccion-diges .imagen-diges {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .seccion-diges .text-start {
+        text-align: center; /* Alineamos el texto al centro en dispositivos pequeños */
+    }
+    .contenedor-tarjeta-experiencia {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer; /* Cambiar cursor a puntero al pasar sobre la tarjeta */
+    }
+    
+    /* Ajustar imagen dentro de la tarjeta */
+    .imagen-tarjeta {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        transition: transform 0.3s ease; /* Agregar transición para la imagen */
+    }
+    .tarjeta-oculta {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        padding: 20px;
+        opacity: 0; /* Inicialmente oculto */
+        transition: opacity 0.3s ease; /* Transición para la opacidad */
+    }
+    
+    /* Mostrar texto oculto al hacer hover */
+    .contenedor-tarjeta-experiencia:hover .tarjeta-oculta {
+        opacity: 1;
+    }
+    
+    /* Estilo para el texto dentro de la tarjeta oculta */
+    .tarjeta-oculta p {
+        color: white; /* Color del texto blanco */
+        font-size: 16px; /* Tamaño de fuente */
+        text-align: center; /* Alinear texto al centro */
+        transition: opacity 0.3s ease; /* Transición para la opacidad */
+    }
+    
+    /* Estilo para el botón de AGENDAR CITA PREVIA */
+    .animate-btn {
+        display: inline-block;
+        background-color: black;
+        color: white; /* Color de texto blanco */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para el fondo y el color del texto */
+        text-decoration: none; /* Quitar subrayado de enlace */
+    }
+    
+    .animate-btn:hover {
+        background-color: black; /* Color de fondo marrón más oscuro al hacer hover */
+        color: white; /* Mantener el color del texto blanco al hacer hover */
+    }
+    
+    /* Ajuste para el separador */
+    .separador-texto-info {
+        height: 2px;
+        background-color: #f5f5dc; /* Color beige */
+    }
+    .imagen-regalo {
+        display: block; /* Asegurar que la imagen sea un bloque */
+        margin: 0 auto; /* Centrar horizontalmente */
+        max-width: 100%; /* Ajustar imagen al 100% del contenedor */
+        height: auto; /* Altura automática */
+        text-align: center;
+    }
+    #preguntas-frecuentes .texto-marron {
+        color: black;
     }
 }
