@@ -234,4 +234,85 @@ body {
     #preguntas-frecuentes .texto-marron {
         color: black;
     }
+    .faq {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #e0d9b2;
+        font-family: Arial, sans-serif;
+    }
+    
+    .faq ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .faq li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #000; /* Asegura que las preguntas sean de color negro */
+        display: block;
+        margin: 0;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+        color: #000; /* Asegura que las respuestas sean de color negro */
+        display: none;
+        padding-left: 20px;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .faq-answer {
+        display: block;
+    }
+    .contenedor-preguntas-frecuentes {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #e0d9b2; /* Color de fondo beige para la sección */
+        padding: 20px;
+        border-radius: 10px; /* Bordes redondeados para el contenedor */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    }
+    #preguntas-frecuentes {
+        text-align: center; /* Alineación centrada para todo el contenido */
+        padding: 40px 0; /* Espaciado interior superior e inferior */
+    }
+    .footer_nuevo{
+        background-color: rgb(168, 167, 167);
+    }
+    .contenedor-mapa {
+        margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    }
+    .mapa-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    .mapa-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    #footer {
+        text-align: center; /* Centrar el contenido del footer */
+    }
+    
+    .texto-marron {
+        color: black;
+        font-size: 14px; 
+    }
 }
