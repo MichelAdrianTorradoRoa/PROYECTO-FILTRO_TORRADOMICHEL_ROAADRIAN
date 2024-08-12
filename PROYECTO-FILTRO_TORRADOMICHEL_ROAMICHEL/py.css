@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html, body {
-    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    overflow-x: hidden; 
     margin: 0;
     padding: 0;
     width: 100%;
@@ -16,23 +16,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-#escritorio {
-    display: none; /* Oculta el aviso por defecto */
-    background-color: #f44336; /* Color de fondo rojo */
-    color: white; /* Texto blanco */
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    max-width: 100%;
-    z-index: 1000; /* Asegura que esté encima de todo */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    line-height: 1.5;
-}
-@media only screen and (min-width: 1001px) {
-    #escritorio {
-        display: block; /* Muestra el aviso solo en escritorio */
-    }
-}
+
 .Encabezado {
     background-color: black;
     width: 100%;
@@ -69,38 +53,39 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-    max-width: 100%; /* Asegurar que la imagen no se desborde */
+    max-width: 100%;
     height: auto;
 }
 .Main {
     width: 100%;
-    margin-top: 20px; /* Espacio entre el header y el video */
+    margin-top: 20px; 
     text-align: center;
 }
 .Main video {
     width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Espacio entre el video y el texto */
+    margin-bottom: 20px; 
 }
 .Main h2,
 .Main p {
-    margin-bottom: 20px; /* Espacio entre el texto y el carrusel */
+    margin-bottom: 20px; 
 }
 .carousel-item img {
     width: 100%;
     height: auto;
 }
+
 @media only screen and (max-width: 1000px) {
     body {
         background-color: white;
     }
 
     .Encabezado {
-        display: block; /* Muestra la barra de navegación en móviles */
+        display: block; 
     }
 
     .logos {
-        max-width: 100%; /* Ancho máximo para los logos dentro de la barra de navegación */
+        max-width: 100%; 
     }
     .row {
         position: relative;
@@ -118,7 +103,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
+        background-color: rgba(0, 0, 0, 0.5); 
     }
     .contenedor-imagen-texto {
         position: absolute;
@@ -142,18 +127,15 @@ body {
     .texto-marron {
         color: #8B4513;
     }
-    .texto-titulos {
-        color: #8B4513; /* Color marrón actual */
-    }
     
     .texto-parrafos {
-        color: black; /* Cambiar a color negro */
+        color: black; 
     }
     .seccion-diges .col-md-6 {
-        flex: 1 1 100%; /* Cambiamos para ocupar toda la anchura en dispositivos pequeños */
+        flex: 1 1 100%; 
         max-width: 100%;
-        order: 2; /* Cambiamos el orden para que el texto esté debajo de la imagen */
-        margin-top: 20px; /* Espacio entre la imagen y el texto */
+        order: 2; 
+        margin-top: 20px; 
     }
 
     .seccion-diges .imagen-diges {
@@ -162,20 +144,20 @@ body {
         display: flex;
     }
     .seccion-diges .text-start {
-        text-align: center; /* Alineamos el texto al centro en dispositivos pequeños */
+        text-align: center; 
     }
     .contenedor-tarjeta-experiencia {
         position: relative;
         overflow: hidden;
-        cursor: pointer; /* Cambiar cursor a puntero al pasar sobre la tarjeta */
+        cursor: pointer; 
     }
     
-    /* Ajustar imagen dentro de la tarjeta */
+    
     .imagen-tarjeta {
         width: 100%;
         height: auto;
         vertical-align: middle;
-        transition: transform 0.3s ease; /* Agregar transición para la imagen */
+        transition: transform 0.3s ease; 
     }
     .tarjeta-oculta {
         position: absolute;
@@ -183,52 +165,52 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        background-color: rgba(0, 0, 0, 0.7); 
         padding: 20px;
-        opacity: 0; /* Inicialmente oculto */
-        transition: opacity 0.3s ease; /* Transición para la opacidad */
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
     }
     
-    /* Mostrar texto oculto al hacer hover */
+   
     .contenedor-tarjeta-experiencia:hover .tarjeta-oculta {
         opacity: 1;
     }
     
-    /* Estilo para el texto dentro de la tarjeta oculta */
+    
     .tarjeta-oculta p {
-        color: white; /* Color del texto blanco */
-        font-size: 16px; /* Tamaño de fuente */
-        text-align: center; /* Alinear texto al centro */
-        transition: opacity 0.3s ease; /* Transición para la opacidad */
+        color: white; 
+        font-size: 16px; 
+        text-align: center; 
+        transition: opacity 0.3s ease; 
     }
     
-    /* Estilo para el botón de AGENDAR CITA PREVIA */
+    
     .animate-btn {
         display: inline-block;
         background-color: black;
-        color: white; /* Color de texto blanco */
+        color: white; 
         padding: 10px 20px;
         border-radius: 5px;
         text-align: center;
-        transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para el fondo y el color del texto */
-        text-decoration: none; /* Quitar subrayado de enlace */
+        transition: background-color 0.3s ease, color 0.3s ease; 
+        text-decoration: none; 
     }
     
     .animate-btn:hover {
-        background-color: black; /* Color de fondo marrón más oscuro al hacer hover */
-        color: white; /* Mantener el color del texto blanco al hacer hover */
+        background-color: black; 
+        color: white;
     }
     
-    /* Ajuste para el separador */
+    
     .separador-texto-info {
         height: 2px;
-        background-color: #f5f5dc; /* Color beige */
+        background-color: #f5f5dc; 
     }
     .imagen-regalo {
-        display: block; /* Asegurar que la imagen sea un bloque */
-        margin: 0 auto; /* Centrar horizontalmente */
-        max-width: 100%; /* Ajustar imagen al 100% del contenedor */
-        height: auto; /* Altura automática */
+        display: block; 
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto; 
         text-align: center;
     }
     #preguntas-frecuentes .texto-marron {
@@ -257,14 +239,14 @@ body {
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
-        color: #000; /* Asegura que las preguntas sean de color negro */
+        color: #000; 
         display: block;
         margin: 0;
     }
     
     .faq-answer {
         font-size: 16px;
-        color: #000; /* Asegura que las respuestas sean de color negro */
+        color: #000; 
         display: none;
         padding-left: 20px;
     }
@@ -279,20 +261,20 @@ body {
     .contenedor-preguntas-frecuentes {
         max-width: 800px;
         margin: 0 auto;
-        background-color: #e0d9b2; /* Color de fondo beige para la sección */
+        background-color: #e0d9b2; 
         padding: 20px;
-        border-radius: 10px; /* Bordes redondeados para el contenedor */
-        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
     }
     #preguntas-frecuentes {
-        text-align: center; /* Alineación centrada para todo el contenido */
-        padding: 40px 0; /* Espaciado interior superior e inferior */
+        text-align: center; 
+        padding: 40px 0; 
     }
     .footer_nuevo{
         background-color: rgb(168, 167, 167);
     }
     .contenedor-mapa {
-        margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+        margin-bottom: 20px; 
     }
     .mapa-responsive {
         position: relative;
@@ -308,7 +290,7 @@ body {
         border: 0;
     }
     #footer {
-        text-align: center; /* Centrar el contenido del footer */
+        text-align: center; 
     }
     
     .texto-marron {
