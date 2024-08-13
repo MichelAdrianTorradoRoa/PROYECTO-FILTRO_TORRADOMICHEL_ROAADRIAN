@@ -7,17 +7,25 @@ En este proyecto esta divido:
 1. Encabezado
 2. Header
 3. Main
+
   3.1. Comercial
 
   3.2. Sobre Nosotros
-  
+
   3.3. Vive la Experiencia
+
   3.4. Regalo
+
   3.5. Contratacion en Eventos Privados
+
   3.6. Preguntas Frecuentes
+
 4. footer
+
   4.1. Pie de Pagina
+
   4.2. Derechos de autor
+  
 
 
 ## Instalaciones 
