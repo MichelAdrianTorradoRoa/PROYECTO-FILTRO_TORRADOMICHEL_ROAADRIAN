@@ -8,7 +8,9 @@ En este proyecto esta divido:
 2. Header
 3. Main
   3.1. Comercial
+
   3.2. Sobre Nosotros
+  
   3.3. Vive la Experiencia
   3.4. Regalo
   3.5. Contratacion en Eventos Privados
