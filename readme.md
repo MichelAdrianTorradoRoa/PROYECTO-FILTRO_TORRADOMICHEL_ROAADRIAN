@@ -20,59 +20,95 @@ En este proyecto esta divido:
 
   3.6. Preguntas Frecuentes
 
-4. footer
+4. Footer
 
   4.1. Pie de Pagina
 
-  4.2. Derechos de autor
-  
+  4.2. Derechos de Autor
+
 
 
 ## Instalaciones 
 
-Deberás descargar el el documento zip
-Tienes que extraerlo con la opción extraer aquí
-Desplaza la carpeta generada a Visual Studio Code
+1. Para poder tener el codigo primero debes decargar el ZIP que se encuentra en "<>CODE".
+
+2. Despues de descargarlo, seguidamente debes extraerlo.
+
+3. Ya cuanto se halla extraido, la carpeta la puede abrir en el Visual Studio Code.
 
 ## Todos los productos
 
+A continuacion se mostrara el como se construyo la siguiente pagina:
+
+Encabezado y Header:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.10 PM.jpeg>)
+
+Main(Comercial):Primera Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.10 PM (1).jpeg>)
 
+Main(Comercial):Segunda Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM.jpeg>)
+
+Main(Comercial):Tercera Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (1).jpeg>)
 
+Main(Sobre Nosotros):Primera Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (2).jpeg>)
+
+Main(Sobre Nosotros): Segunda Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (4).jpeg>)
 
+Main(Sobre Nosotros): Tercera Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (5).jpeg>)
+
+Main(Sobre Nosotros): Cuarta Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (6).jpeg>)
 
+Main(Sobre Vive la Experiencia): Primera Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (7).jpeg>)
+
+Main(Sobre Vive la Experiencia): Primera Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM.jpeg>)
 
+Main(Sobre Vive la Experiencia): Primera Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM (1).jpeg>)
+
+Main(Sobre Vive la Experiencia): Primera Parte:
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM (2).jpeg>)
 
+Main(Sobre Vive la Experiencia): Primera Parte:
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM.jpeg>)
+
+Main(Sobre Regalo):
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM (1).jpeg>)
 
+Main(Sobre Contratacion para Eventos Privados):
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM (2).jpeg>)
+
+Main(Sobre Preguntas Frecuentes):
 
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.05 PM.jpeg>)
 
+Footer(Pie de Pagina y Derechos de Autor):
+
 ![alt text](<WhatsApp Image 2024-06-17 at 1.41.04 PM.jpeg>)
 
-
-Hecho por Michel Adrian Torrado Roa
-
+Hecho por @MichelAdrianTorado Roa
 
 
 
@@ -80,34 +116,5 @@ Hecho por Michel Adrian Torrado Roa
 
 
 
-Todos los productos 🏷️
 
-En este apartado lograrás encontrar una vista de todos los produtos disponibles en la tienda incluyendo Abrigos,Camisetas y Pantalones con su descripción y precio
 
-image
-
-Abrigos 🧥
-En este apartado encontrarás una vista de los Abrigos con su descripción y precio
-
-image
-
-Camisetas 👕
-En este apartado encontrarás una vista de las Camisetas con su descripción y precio
-
-image
-
-Pantalones 👖
-En este apartado encontrarás una vista de los Pantalones con su descripción y precio
-
-image
-
-Carrito 🛒
-En este apartado tenddrás una vista de tres productos por defecto y podrás quitarlos indicando en la x o vaciando el carrito
-
-image
-
-Important
-
-Si le das en vaciar carrito te saldráuna vista sin productos en el carrito
-
-image
