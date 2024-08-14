@@ -87,12 +87,6 @@ body {
     .logos {
         max-width: 100%; 
     }
-    .row {
-        position: relative;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
     .imagen-banner-mas-informacion {
         width: 100%;
         height: auto;
@@ -121,9 +115,6 @@ body {
     .texto-blanco {
         color: white;
     }
-    .texto-negro {
-        color: black;
-    }
     .texto-marron {
         color: #8B4513;
     }
@@ -142,9 +133,6 @@ body {
         width: 100%;
         height: auto;
         display: flex;
-    }
-    .seccion-diges .text-start {
-        text-align: center; 
     }
     .contenedor-tarjeta-experiencia {
         position: relative;
