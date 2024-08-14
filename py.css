@@ -254,15 +254,8 @@ body {
         border-radius: 10px; 
         box-shadow: 0 0 10px rgba(0,0,0,0.1); 
     }
-    #preguntas-frecuentes {
-        text-align: center; 
-        padding: 40px 0; 
-    }
     .footer_nuevo{
         background-color: rgb(168, 167, 167);
-    }
-    .contenedor-mapa {
-        margin-bottom: 20px; 
     }
     .mapa-responsive {
         position: relative;
@@ -279,10 +272,5 @@ body {
     }
     #footer {
         text-align: center; 
-    }
-    
-    .texto-marron {
-        color: black;
-        font-size: 14px; 
     }
 }
