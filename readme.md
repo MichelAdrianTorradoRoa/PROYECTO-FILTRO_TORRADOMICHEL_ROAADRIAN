@@ -12,13 +12,11 @@ En este proyecto esta divido:
 
   3.2. Sobre Nosotros
 
-  3.3. Vive la Experiencia
+  3.3. Regalo
 
-  3.4. Regalo
+  3.4. Contratacion en Eventos Privados
 
-  3.5. Contratacion en Eventos Privados
-
-  3.6. Preguntas Frecuentes
+  3.5. Preguntas Frecuentes
 
 4. Footer
 
@@ -42,71 +40,51 @@ A continuacion se mostrara el como se construyo la siguiente pagina:
 
 Encabezado y Header:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.10 PM.jpeg>)
+![alt text](<>)
 
 Main(Comercial):Primera Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.10 PM (1).jpeg>)
+![alt text](<>)
 
 Main(Comercial):Segunda Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM.jpeg>)
+![alt text](<>)
 
 Main(Comercial):Tercera Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (1).jpeg>)
+![alt text]()
 
 Main(Sobre Nosotros):Primera Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (2).jpeg>)
+![alt text]()
 
 Main(Sobre Nosotros): Segunda Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (4).jpeg>)
+![alt text]()
 
 Main(Sobre Nosotros): Tercera Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (5).jpeg>)
+![alt text]()
 
 Main(Sobre Nosotros): Cuarta Parte:
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (6).jpeg>)
-
-Main(Sobre Vive la Experiencia): Primera Parte:
-
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.09 PM (7).jpeg>)
-
-Main(Sobre Vive la Experiencia): Primera Parte:
-
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM.jpeg>)
-
-Main(Sobre Vive la Experiencia): Primera Parte:
-
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM (1).jpeg>)
-
-Main(Sobre Vive la Experiencia): Primera Parte:
-
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.07 PM (2).jpeg>)
-
-Main(Sobre Vive la Experiencia): Primera Parte:
-
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM.jpeg>)
+![alt text]()
 
 Main(Sobre Regalo):
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM (1).jpeg>)
+![alt text]()
 
 Main(Sobre Contratacion para Eventos Privados):
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.06 PM (2).jpeg>)
+![alt text]()
 
 Main(Sobre Preguntas Frecuentes):
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.05 PM.jpeg>)
+![alt text]()
 
 Footer(Pie de Pagina y Derechos de Autor):
 
-![alt text](<WhatsApp Image 2024-06-17 at 1.41.04 PM.jpeg>)
+![alt text]()
 
 Hecho por @MichelAdrianTorado Roa
 
