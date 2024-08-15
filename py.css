@@ -122,6 +122,10 @@ body {
     .texto-parrafos {
         color: black; 
     }
+    .texto-titulos{
+        color: black;
+        font-weight: bold;
+    }
     .seccion-diges .col-md-6 {
         flex: 1 1 100%; 
         max-width: 100%;
@@ -225,7 +229,6 @@ body {
     
     .faq-question {
         font-size: 18px;
-        font-weight: bold;
         cursor: pointer;
         color: #000; 
         display: block;
