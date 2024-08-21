@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar productos en el contenedor
     function mostrarProductos(productos) {
         const contenedorProductos = document.getElementById('contenedor-productos');
-        contenedorProductos.innerHTML = ''; // Limpiar contenedor antes de agregar nuevos productos
+        contenedorProductos.innerHTML = ''; 
 
         productos.forEach(producto => {
             const productoDiv = document.createElement('div');
