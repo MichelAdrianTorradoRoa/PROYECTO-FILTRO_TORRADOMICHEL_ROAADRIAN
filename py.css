@@ -13,18 +13,15 @@ html, body {
     top: 0;
     padding: 10px 0;
     display: none;
-
 }
 
 .logos {
     display: flex;
     flex-direction: row;
 }
-
 .icons-top {
     margin-right: 15px;
 }
-
 
 #header img {
     display: flex;
@@ -33,28 +30,35 @@ html, body {
     max-width: 100%;
     height: auto;
 }
+
 .Main {
     width: 100%;
     margin-top: 20px; 
     text-align: center;
 }
+
 .Main video {
     width: 100%;
     height: auto;
     margin-bottom: 20px; 
 }
+
 .Main p {
     margin-bottom: 20px; 
 }
 
+/* Estilos para móviles y pantallas pequeñas */
 @media only screen and (max-width: 1000px) {
-
-
     .Encabezado {
         display: block; 
     }
 
-    .texto-titulos{
+    .Main video {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .texto-titulos {
         color: black;
         font-weight: bold;
     }
@@ -87,6 +91,7 @@ html, body {
     input[type="checkbox"]:checked ~ .faq-answer {
         display: block;
     }
+    
     .contenedor-preguntas-frecuentes {
         max-width: 800px;
         margin: 0 auto;
@@ -95,14 +100,17 @@ html, body {
         border-radius: 10px; 
         box-shadow: 0 0 10px rgba(0,0,0,0.1); 
     }
-    .footer_nuevo{
+    
+    .footer_nuevo {
         background-color: rgb(168, 167, 167);
     }
+    
     .mapa-responsive {
         position: relative;
         overflow: hidden;
         padding-top: 56.25%;
     }
+    
     .mapa-responsive iframe {
         position: absolute;
         top: 0;
@@ -111,6 +119,249 @@ html, body {
         height: 100%;
         border: 0;
     }
+    
+    #footer {
+        text-align: center; 
+    }
+}
+
+/* Estilos específicos para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Encabezado {
+        display: block; 
+    }
+
+    .Main video {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .texto-titulos {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .faq li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        cursor: pointer;
+        color: #000; 
+        display: block;
+        margin: 0;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+        color: #000; 
+        display: none;
+        padding-left: 20px;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .faq-answer {
+        display: block;
+    }
+    
+    .contenedor-preguntas-frecuentes {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #e0d9b2; 
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+    
+    .footer_nuevo {
+        background-color: rgb(168, 167, 167);
+    }
+    
+    .mapa-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    
+    .mapa-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    #footer {
+        text-align: center; 
+    }
+}
+
+/* Estilos específicos para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 1024px) {
+    .Encabezado {
+        display: block; 
+    }
+
+    .Main video {
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .texto-titulos {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .faq li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        cursor: pointer;
+        color: #000; 
+        display: block;
+        margin: 0;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+        color: #000; 
+        display: none;
+        padding-left: 20px;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .faq-answer {
+        display: block;
+    }
+    
+    .contenedor-preguntas-frecuentes {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #e0d9b2; 
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+    
+    .footer_nuevo {
+        background-color: rgb(168, 167, 167);
+    }
+    
+    .mapa-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    
+    .mapa-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    #footer {
+        text-align: center; 
+    }
+}
+
+/* Estilos específicos para pantallas muy grandes */
+@media (min-width: 1440px) {
+    .Encabezado {
+        display: block; 
+    }
+
+    .Main video {
+        width: 70%;
+        max-width: 1400px;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .texto-titulos {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .faq li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        cursor: pointer;
+        color: #000; 
+        display: block;
+        margin: 0;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+        color: #000; 
+        display: none;
+        padding-left: 20px;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked ~ .faq-answer {
+        display: block;
+    }
+    
+    .contenedor-preguntas-frecuentes {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #e0d9b2; 
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+    
+    .footer_nuevo {
+        background-color: rgb(168, 167, 167);
+    }
+    
+    .mapa-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    
+    .mapa-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
     #footer {
         text-align: center; 
     }

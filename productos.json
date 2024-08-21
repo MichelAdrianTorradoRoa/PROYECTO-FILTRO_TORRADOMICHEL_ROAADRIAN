@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "nombre": "Producto 1",
+      "precio": 19.99,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_992630-MCO76187522281_052024-O.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Producto 2",
+      "precio": 29.99,
+      "imagen": "https://down-co.img.susercontent.com/file/5ff8e3620d820243abdf737a70ab195b"
+    }
+  ]
