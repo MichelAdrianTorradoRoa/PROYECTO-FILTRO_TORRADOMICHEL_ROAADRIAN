@@ -1,14 +1,44 @@
 [
-    {
-      "id": 1,
-      "nombre": "Producto 1",
-      "precio": 19.99,
-      "imagen": "https://http2.mlstatic.com/D_NQ_NP_992630-MCO76187522281_052024-O.webp"
-    },
-    {
-      "id": 2,
-      "nombre": "Producto 2",
-      "precio": 29.99,
-      "imagen": "https://down-co.img.susercontent.com/file/5ff8e3620d820243abdf737a70ab195b"
-    }
-  ]
+  {
+    "id": 1,
+    "nombre": "Cadena Plata Italiana de ley 925",
+    "precio": 20000,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_992630-MCO76187522281_052024-O.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Cadena Plata Italiana de ley 925 bañada en oro",
+    "precio": 42000,
+    "imagen": "https://down-co.img.susercontent.com/file/5ff8e3620d820243abdf737a70ab195b"
+  },
+  {
+    "id": 3,
+    "nombre": "Charms de Plata 925 del Abecedario",
+    "precio": 520000,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_601969-MCO46335908712_062021-O.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Charms doradas del Abecedario",
+    "precio": 1040000,
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_827191-MCO77242201635_062024-T.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "2 Piedras naturales de cuarzo rosa y amatista",
+    "precio": 40000,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_830033-MCO43740712029_102020-O.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Cristal Swarovski",
+    "precio": 250000,
+    "imagen": "https://bidecol.me/wp-content/uploads/2020/11/21A93657-FA59-4C8B-85E5-4FD92A6E01E3.jpeg"
+  },
+  {
+    "id": 7,
+    "nombre": "Dijes Plata Italiana de ley 925",
+    "precio": 20000,
+    "imagen": "dijes.png"
+  }
+]

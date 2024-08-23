@@ -1,93 +1,70 @@
+// Obtener el carrito de compras y los botones de agregar al carrito
 document.addEventListener('DOMContentLoaded', () => {
-    const productosURL = 'productos.json'; // Cambia a la ruta correcta
+    const carrito = document.getElementById('lista-carrito');
+    const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+    const agregarBtns = document.querySelectorAll('.agregar-carrito');
 
-    // Cargar productos al iniciar
-    async function cargarProductos() {
-        try {
-            const respuesta = await fetch(productosURL);
-            const productos = await respuesta.json();
-            mostrarProductos(productos);
-        } catch (error) {
-            console.error('Error al cargar los productos:', error);
-        }
-    }
+    // Inicializar carrito
+    let carritoItems = JSON.parse(localStorage.getItem('carrito')) || [];
 
-    // Mostrar productos en el contenedor
-    function mostrarProductos(productos) {
-        const contenedorProductos = document.getElementById('contenedor-productos');
-        contenedorProductos.innerHTML = ''; 
-
-        productos.forEach(producto => {
-            const productoDiv = document.createElement('div');
-            productoDiv.className = 'producto';
-            
-            productoDiv.innerHTML = `
-              <img src="${producto.imagen}" alt="${producto.nombre}">
-              <h3>${producto.nombre}</h3>
-              <p>Precio: $${producto.precio.toFixed(2)}</p>
-              <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+    // Función para renderizar los productos en el carrito
+    const renderizarCarrito = () => {
+        carrito.innerHTML = '';
+        carritoItems.forEach(item => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.innerHTML = `
+                <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+                <div class="card-body">
+                    <h5 class="card-title">${item.nombre}</h5>
+                    <p class="card-text">${item.precio}</p>
+                    <button class="btn btn-danger btn-sm eliminar-carrito" data-id="${item.id}">Eliminar</button>
+                </div>
             `;
-            
-            contenedorProductos.appendChild(productoDiv);
+            carrito.appendChild(li);
         });
-    }
+    };
 
-    // Agregar producto al carrito
-    window.agregarAlCarrito = function(idProducto) {
-        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        const productoEncontrado = carrito.find(producto => producto.id === idProducto);
-        
-        if (productoEncontrado) {
-            productoEncontrado.cantidad += 1;
+    // Función para agregar producto al carrito
+    const agregarAlCarrito = (id, nombre, precio, imagen) => {
+        const item = carritoItems.find(item => item.id === id);
+        if (item) {
+            item.cantidad++;
         } else {
-            const producto = { id: idProducto, cantidad: 1 };
-            carrito.push(producto);
+            carritoItems.push({ id, nombre, precio, imagen, cantidad: 1 });
         }
-        
-        localStorage.setItem('carrito', JSON.stringify(carrito));
-        mostrarCarrito();
+        localStorage.setItem('carrito', JSON.stringify(carritoItems));
+        renderizarCarrito();
     };
 
-    // Mostrar productos en el carrito
-    function mostrarCarrito() {
-        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        const contenedorCarrito = document.getElementById('contenedor-carrito');
-        contenedorCarrito.innerHTML = ''; // Limpiar el carrito antes de agregar los productos
-
-        carrito.forEach(item => {
-            const productoDiv = document.createElement('div');
-            productoDiv.className = 'item-carrito';
-            
-            productoDiv.innerHTML = `
-              <p>Producto ID: ${item.id}</p>
-              <p>Cantidad: ${item.cantidad}</p>
-              <button onclick="eliminarDelCarrito(${item.id})">Eliminar</button>
-            `;
-            
-            contenedorCarrito.appendChild(productoDiv);
+    // Agregar eventos a los botones de agregar al carrito
+    agregarBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const id = parseInt(e.target.dataset.id);
+            const nombre = e.target.closest('.list-group-item').querySelector('.card-title').textContent;
+            const precio = e.target.closest('.list-group-item').querySelector('.card-text').textContent;
+            const imagen = e.target.closest('.list-group-item').querySelector('.card-img-top').src;
+            agregarAlCarrito(id, nombre, precio, imagen);
         });
-    }
+    });
 
-    // Eliminar producto del carrito
-    window.eliminarDelCarrito = function(idProducto) {
-        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        carrito = carrito.filter(producto => producto.id !== idProducto);
-        localStorage.setItem('carrito', JSON.stringify(carrito));
-        mostrarCarrito();
-    };
+    // Función para vaciar el carrito
+    vaciarCarritoBtn.addEventListener('click', () => {
+        carritoItems = [];
+        localStorage.removeItem('carrito');
+        renderizarCarrito();
+    });
 
-    // Filtrar productos por nombre
-    window.filtrarProductos = function(filtro) {
-        fetch(productosURL)
-          .then(response => response.json())
-          .then(productos => {
-            const productosFiltrados = productos.filter(producto => 
-              producto.nombre.toLowerCase().includes(filtro.toLowerCase())
-            );
-            mostrarProductos(productosFiltrados);
-          });
-    }
+    // Función para eliminar productos del carrito
+    carrito.addEventListener('click', (e) => {
+        if (e.target.classList.contains('eliminar-carrito')) {
+            const id = parseInt(e.target.dataset.id);
+            carritoItems = carritoItems.filter(item => item.id !== id);
+            localStorage.setItem('carrito', JSON.stringify(carritoItems));
+            renderizarCarrito();
+        }
+    });
 
-    // Cargar productos al iniciar
-    cargarProductos();
+    // Renderizar carrito al cargar la página
+    renderizarCarrito();
 });
