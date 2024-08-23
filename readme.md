@@ -9,12 +9,12 @@ En este proyecto esta divido:
 3. Main
 
   3.1. Comercial
+  
+  3.2. Carrito
 
-  3.2. Sobre Nosotros
+  3.3. Sobre Nosotros
 
-  3.3. Regalo
-
-  3.4. Contratacion en Eventos Privados
+  3.4. Informacion Relevante
 
   3.5. Preguntas Frecuentes
 
@@ -40,53 +40,33 @@ A continuacion se mostrara el como se construyo la siguiente pagina:
 
 Encabezado y Header:
 
-![alt text](<>)
+![alt text](<1.png>)
 
 Main(Comercial):Primera Parte:
 
-![alt text](<>)
+![alt text](<2.png>)
 
-Main(Comercial):Segunda Parte:
+Main(Carrito):
 
-![alt text](<>)
+![alt text](3.png)
 
-Main(Comercial):Tercera Parte:
+Main(Sobre Nosotros):
 
-![alt text]()
+![alt text](4.png)
 
-Main(Sobre Nosotros):Primera Parte:
+Main(Informacion Relevante):
 
-![alt text]()
-
-Main(Sobre Nosotros): Segunda Parte:
-
-![alt text]()
-
-Main(Sobre Nosotros): Tercera Parte:
-
-![alt text]()
-
-Main(Sobre Nosotros): Cuarta Parte:
-
-![alt text]()
-
-Main(Sobre Regalo):
-
-![alt text]()
-
-Main(Sobre Contratacion para Eventos Privados):
-
-![alt text]()
+![alt text](5.png)
 
 Main(Sobre Preguntas Frecuentes):
 
-![alt text]()
+![alt text](6.png)
 
 Footer(Pie de Pagina y Derechos de Autor):
 
-![alt text]()
+![alt text](7.png)
 
-Hecho por @MichelAdrianTorado Roa
+Hecho por @MichelAdrianToradoRoa
 
 
 
