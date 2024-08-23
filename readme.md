@@ -7,22 +7,15 @@ En este proyecto esta divido:
 1. Encabezado
 2. Header
 3. Main
-
-  3.1. Comercial
-  
-  3.2. Carrito
-
-  3.3. Sobre Nosotros
-
-  3.4. Informacion Relevante
-
-  3.5. Preguntas Frecuentes
+   1. Comercial
+   2. Carrito
+   3. Sobre Nosotros
+   4. Informacion Relevante
+   5. Preguntas Frecuentes
 
 4. Footer
-
-  4.1. Pie de Pagina
-
-  4.2. Derechos de Autor
+   1. Pie de Pagina
+   2. Derechos de Autor
 
 
 
@@ -66,7 +59,7 @@ Footer(Pie de Pagina y Derechos de Autor):
 
 ![alt text](7.png)
 
-Hecho por @MichelAdrianToradoRoa
+Hecho por @MichelAdrianToradoRoa(https://github.com/MichelAdrianTorradoRoa)
 
 
 
